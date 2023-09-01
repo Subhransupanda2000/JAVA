@@ -9,7 +9,7 @@ public class StringExample2 {
         } else {
             System.out.println("not equals");
         }
-        
+
 
 
     }
