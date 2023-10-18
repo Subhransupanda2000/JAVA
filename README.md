@@ -14,4 +14,17 @@ Solution 2 > declare no-arg constructor explicitly.
 * First line in constructor can either be super() or this(). But, super() and this() cannot be used in same constructor. (Please ensure that super() or this() whichever is used must be be first line of constructor, else you will face compilation error)
 We read in above points that compiler implicitly adds super() as first line of constructor, but if we add this() explicitly than compiler doesn’t add super()
 
-Program to understand usage of this() and super() in constructor and also to show this() and super() cannot be used in same constructor 
+ Program to understand usage of this() and super() in constructor and also to show this() and super() cannot be used in same constructor 
+* Constructor can use access modifiers like - private, protected and public. If no access modifier is defined than its default.
+private constructor can be used in Singleton classes where object of the class cannot be created outside class.
+class with protected constructor cannot be instantiated in other package. Though constructor can be called through inheritance.
+* Constructor is not a keyword in java.
+* Interface does not have constructor in java.
+  Constructors are never inherited and hence cannot be overridden.
+* Constructors can be overloaded.
+* Abstract class also have constructor, and those constructors are called when object of concrete subclass is created, because abstract class cannot be instantiated directly.
+* If constructor throws >
+RuntimeException/unchecked - Its fine even if not handled.
+
+CompileTime/checked Exception - It must be caught at time of object creation, or method in which object is created must throw appropriate Exception.
+
