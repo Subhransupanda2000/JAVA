@@ -41,7 +41,20 @@
   are not stored in PermGen space.
 * We must use ClassName.staticVariableName
 # static method
-* 
+* static methods are also known as class methods.
+* We need not to create instance of class for accessing static methods.
+* Static methods can access all static variables, but cannot access non-static (instance variables)
+* Static method cannot be overridden with non-static method, any attempt to do this will cause compilation error.
+* Non-static method cannot be overridden with static method, any attempt to do this will cause compilation error.
+* We must use ClassName.staticMethod()
+* Q.Static method cannot be overridden, any attempt to do this will not cause compilation error, but the results won’t be same when we would have overridden non-static methods.
+  But why? 
+  Overriding in Java means that the method would be called on the run time based on type of the object and not on the compile time type of it .
+  But static methods are class methods access to them is always resolved during compile time only using the compile time type information.
+# Static class   
+
+
+
 
 
 
