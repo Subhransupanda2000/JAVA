@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class FileCreation {
 
     public static void main(String[] args) throws IOException {
-        File Myobj = new File("Myfile.txt");
-        if ((Myobj.createNewFile())) {
-            System.out.println("file is created : " + Myobj.getName());
+        File file = new File("Myfile.txt");
+        if ((file.createNewFile())) {
+            System.out.println("file is created : " + file.getName());
         } else {
             System.out.println("file already exist");
         }
@@ -17,15 +17,18 @@ public class FileCreation {
         fileWriter.write("Sucessfully written");
         fileWriter.close();
         System.out.println("sucessfully wrote to the  file");
-        Scanner myScanner = new Scanner(Myobj);
+        Scanner myScanner = new Scanner(file);
         if (myScanner.hasNext()) {
             String data = myScanner.nextLine();
             System.out.println(data);
         }
-        if (Myobj.delete()) {
-            System.out.println("dltd : " + Myobj.getName());
+        if (file.delete()) {
+            System.out.println("dltd : " + file.getName());
         }
+        if (myScanner != null) {
+            myScanner.close();
 
 
     }
+}
 }
