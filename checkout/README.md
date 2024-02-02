@@ -1,5 +1,4 @@
-# Q.The implementation to be done later
-# on checkout we should give response of cart items whose status is buy_now.
+# Q.Define response of cart items whose status is buy_now.
 * First make sure you have a  entiti related to the ccheckout process .which is cartitemstate in our project.
 * Add  fields for the state.
 * Define a controller of it.
