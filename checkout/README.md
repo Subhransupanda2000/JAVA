@@ -2,7 +2,7 @@
 ```
 * class-CartController
   @GetMapping
-  public cartalogItem checkout(){
+  public cartalogItemId checkout(){
     return cartItemService.checkout();
   }
 * We need to write a method for checkout in cartservice interface.
