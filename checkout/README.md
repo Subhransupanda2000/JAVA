@@ -2,10 +2,11 @@
 ```
 * class-CartController
   @GetMapping
-  public cartalogItemId checkout(){
+  public cart checkout(){
     return cartItemService.checkout();
   }
-* We need to write a method for checkout in cartservice interface.
+* CartService interface:
+  We need to write a method for checkout in cartservice interface.
 * Class-CartItemServiceImpl
   We will create a method as checkout which will return cartitems.
   We will use here userSessionServiceImpl to fetch our item only.
