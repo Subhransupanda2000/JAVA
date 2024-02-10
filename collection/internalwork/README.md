@@ -27,3 +27,6 @@ The use of a self-balancing binary search tree allows TreeSet to achieve logarit
 Key Characteristics:
 * Sorted order: Elements are stored in sorted order based on their natural ordering or a provided comparator.
 Unique elements: Like other set implementations in Java, TreeSet does not allow duplicate elements.
+# What is the internal data structure used in hashset?
+* he working of a HashSet is based on a hash table, which is a data structure that uses a hash function to map keys (in this case, the elements being stored) to values (in this case, their positions in the table). The hash function takes an input (the element) and returns a hash code, which is an integer value. This hash code is used as an index to store the element in an array-like structure, often referred to as a bucket.
+HashSet internally uses HashMap to store it’s elements. Whenever you create a HashSet object, one HashMap object associated with it is also created. This HashMap object is used to store the elements you enter in the HashSet. The elements you add into HashSet are stored as keys of this HashMap object. The value associated with those keys will be a constant
