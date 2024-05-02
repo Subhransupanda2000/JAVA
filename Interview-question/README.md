@@ -25,4 +25,4 @@ class App8 extends App7 {
 ```
 
 # Q.Why HashCode of parent class and child class are same here?
-* Ans-When the control will go to the App8 this.hashcode will print current object . Like this when control will go to the parent method this.hashcode current object hashcode will print and that object belongs to App8 class. Thats why both hashcode will same
+* Ans-When the control will go to the App8 this.hashcode will print current object . Like this when control will go to the parent method this.hashcode current object hashcode will print and that object belongs to App8 class. Thats why both hashcode will same.
