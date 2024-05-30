@@ -9,3 +9,6 @@
 * root@ubuntu:~# rm -r <folder/directory name>  It deleted the directory permanently
 * root@ubuntu:~# rm -ri mydir  First it will give pop up notification then delete
 * root@ubuntu:~# touch <file name> It create a new file
+* root@ubuntu:~# ln -s <source path> <link name> It will create a link betwen a one file to other file
+* root@ubuntu:~# clear It will clear the cmd screen
+* root@ubuntu:~# ls -l; clear first it will show list of directories then clear the screen
