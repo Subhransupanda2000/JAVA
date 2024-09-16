@@ -23,3 +23,9 @@
 * when we create object using new keyword matching constructer will execute.
 # inheritance in constructer and overiding
 * overiding is not possible in constructer
+# constructer in interface,abscract
+* in absctract,class is possible to make constructer but in interface it is not, bcz in interface variables are public static final
+# Recursive method and constructer class
+* In recursive method when we invoke a method one method will call to other method other method calls one method here wether we invoke or not error will not get
+* But in case of constructer we will get error if constructer calls each other
+* If we have arg constructer in parent and child if we call super() from arg constructer it will give error we have to write arg constructer in parent as well else we will get compile time error
